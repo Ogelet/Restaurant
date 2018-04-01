@@ -95,7 +95,7 @@ a{
   background-size: cover;
   color: #ffffff;
   text-align: center;
-  padding-bottom: 140px;
+  padding-bottom: 160px;
 }
 .main_header a{
   color: #ffffff;
@@ -110,9 +110,15 @@ a{
   max-width: 1250px;
   margin: 0 auto;
 }
+.logo{
+  flex-grow: 1;
+  text-align: left;
+  position: relative;
+  top: 7px;
+}
 .social_links{
   display: flex;
-  padding: 50px 0 0;
+  padding: 43px 23px 0 0;
 }
 .social_links a{
   background: url(../img/Social.png) no-repeat;
@@ -128,11 +134,14 @@ a.social_link--facebook{
 }
 .header_menu{
   display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
 }
 .header_menu .menu_link{
   display: block;
-  padding: 50px 14px 0;
+  padding: 43px 28px 0;
   border-top: 3px solid transparent;
+  font-size: 21px;
   font-family: 'Gentium Book Basic', 'Times New Roman', Times, serif;
 }
 .header_menu .menu_link:hover{
@@ -142,20 +151,22 @@ a.social_link--facebook{
   border-top: 3px solid #fff;
 }
 .heading{
-  margin-top: 160px;
+  margin-top: 145px;
   text-transform: lowercase;
   text-align: center;
   font-size: 90px;
   background: url(../img/Decoration.png) center bottom no-repeat;
-  padding-bottom: 60px;
-  margin-bottom: 40px;
+  margin-bottom: 47px;
   font-family: "YesevaOneRegular", 'Times New Roman', Times, serif;
+  font-weight: normal;
+  padding: 0 80px 71px;
+  line-height: 117px;
 }
 .main_btn{
   color: #ffffff;
   font-size: 18px;
   text-transform: uppercase;
-  padding: 20px 50px;
+  padding: 18px 48px;
   margin: 0 15px;
   cursor: pointer;
 }
@@ -174,14 +185,14 @@ a.social_link--facebook{
   background: rgba(255,255,255,.1);
 }
 section.about_food{
-  background: url(../img/dish.png) right 300px center no-repeat, url(../img/pattern2.png), linear-gradient( 130deg, #fff 50%, #e8e8e8);
+  background: url(../img/dish.png) right 240px top 60px no-repeat, url(../img/pattern2.png), linear-gradient( 130deg, #fff 50%, #e8e8e8);
   box-shadow: inset 5px 5px 50px rgba(1,1,1,.1);
   padding: 100px 0 110px;
   text-align: center;
 }
 section.about_food .content_wrapper{
-  max-width: 460px;
-  margin: 0;
+  max-width: 430px;
+  margin-left: 112px;
 }
 .section_title{
   color: #cc9900;
@@ -198,20 +209,24 @@ section.about_food .content_wrapper{
   color: #4c4c4c;
 }
 section.about_food .main_text{
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+}
+.img_wrapper{
+  padding-left: 66px;
 }
 section.about_ingredients{
   background: url(../img/bg-ingr.jpg) no-repeat center;
   background-size: cover;
   text-align: center;
   color: #ffffff;
-  padding: 80px 0;
+  padding: 100px 0;
 }
 section.about_ingredients .content_wrapper{
   max-width: 570px;
   background: rgba(0,0,0,.67);
   float: right;
-  padding: 50px;
+  padding: 75px 75px 87px;
+  margin-right: 40px;
 }
 .section_title__white{
   color: #ffffff;
@@ -223,6 +238,8 @@ section.about_ingredients .main_text{
 .imgages_wrapper{
   display: flex;
   justify-content: space-between;
+  margin-top: 70px;
+  padding: 0 25px;
 }
 .ingredient_pic{
   width: 100px;
@@ -231,7 +248,7 @@ section.about_ingredients .main_text{
   border: 5px solid rgba(255, 255, 255, .09 )
 }
 section.menu{
-  padding: 70px 0;
+  padding: 102px 0 35px;
   background:  url(../img/pattern3.png), linear-gradient( 134deg, rgba(32, 90, 91, .09) 1%,  #fff 40%);
   box-shadow: inset 0 0 50px rgba(1,1,1,.05);
 }
@@ -239,9 +256,13 @@ section.menu{
   display: flex;
   justify-content: space-between;
   text-align: center;
+  padding: 0 100px;
+}
+.menu_part{
+  width: 43%;
 }
 .dish{
-  margin-bottom: 25px;
+  margin-bottom: 11px;
   padding: 10px 10px;
 }
 .dish--special{
@@ -264,8 +285,11 @@ section.menu{
   display: flex;
   justify-content: space-between;
   background: url(../img/line.png) center bottom no-repeat;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+.dish .main_text{
+  text-align: left;
 }
 .dish_title,
 .price{
@@ -290,7 +314,7 @@ section.reviews .content_wrapper{
   background: rgba(0,0,0,.8);
   max-width: 770px;
   margin: 0 auto;
-  padding: 70px 60px;
+  padding: 75px 85px 97px;
 }
 section.reviews .content_wrapper .main_text{
   font-family: 'Gentium Book Basic', 'Times New Roman', Times, serif;
@@ -305,19 +329,21 @@ section.reviews .content_wrapper .main_text:before{
   height: 25px;
   position: absolute;
   top: -10px;
-  left: -40px;
+  left: -54px;
   background: url(../img/quots.png) center no-repeat;
 }
 .author{
   color: #fff;
   font-size: 18px;
-  margin-top: 20px;
+  margin-top: 34px;
+  display: inline-block;
 }
 section.booking{
   background: url(../img/pattern2.png), linear-gradient( 130deg, #fff 50%, #e8e8e8);
   box-shadow: inset 5px 5px 50px rgba(1,1,1,.1);
   padding: 100px 0 110px;
   text-align: center;
+  padding: 0 110px 0 30px;
 }
 section.booking .container{
   display: flex;
@@ -328,6 +354,7 @@ section.booking .container{
 }
 .booking_description{
   max-width: 430px;
+  margin-left: 75px;
 }
 .booking_description .main_text{
   margin-bottom: 20px;
@@ -440,15 +467,31 @@ section.booking .container{
   margin: 30px auto 0;
   text-align: center;
 }
+.main_footer .bold_text{
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "OpenSansBold", Arial, sans-serif;
+}
+.main_footer .social_links{
+  justify-content: center
+}
 .main_footer .social_links a{
   background: url(../img/social-f.png) center no-repeat;
+  width: 20px;
+}
+.main_footer .social_links a.social_link--facebook{
+  background-position: 0px center;
 }
 .main_footer .social_links a.social_link--youtube{
-
+  background-position: -18px center;
 }
 .main_footer .social_links a.social_link--twitter{
-
+  background-position: -44px center;
 }
 .main_footer .social_links a.social_link--smth{
-
+  background-position: -70px center;
+}
+.social_links a:hover{
+  opacity: .7;
 }
