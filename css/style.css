@@ -70,10 +70,13 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body{
   font-size: 16px;
   font-family: "LatoRegular", Arial, Helvetica, sans-serif;
+  position: relative;
+  padding-bottom: 320px;
 }
 .clearfix::after {
   content: "";
@@ -154,6 +157,7 @@ a.social_link--facebook{
   text-transform: uppercase;
   padding: 20px 50px;
   margin: 0 15px;
+  cursor: pointer;
 }
 .main_btn__black{
   border: 1px solid #000;
@@ -314,4 +318,137 @@ section.booking{
   box-shadow: inset 5px 5px 50px rgba(1,1,1,.1);
   padding: 100px 0 110px;
   text-align: center;
+}
+section.booking .container{
+  display: flex;
+  justify-content: space-between;
+}
+.food_picture{
+  margin: 0 10px;
+}
+.booking_description{
+  max-width: 430px;
+}
+.booking_description .main_text{
+  margin-bottom: 20px;
+}
+.booking_form{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.booking_form fieldset{
+  width: 200px;
+  border: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.form_label{
+  display: block;
+  font-family: "OpenSansBold", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #c9a131;
+  margin-bottom: 3px;
+}
+.form_input{
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid #c8c6c6;
+  font-family: "OpenSansItalic", sans-serif;
+  font-size: 16px;
+  color: #4c4c4c;
+  padding: 3px 10px;
+  width: 100%;
+}
+::-webkit-input-placeholder {
+  color: #7c7c7c;
+}
+::-moz-placeholder { 
+  color: #7c7c7c;
+}
+:-ms-input-placeholder { 
+  color: #7c7c7c;
+}
+:-moz-placeholder { 
+  color: #7c7c7c;
+}
+.form_input:focus{
+  border: 1px solid #c89f2d;
+}
+.form_input--date{
+  background: rgba(255, 255, 255, 0.4) url(../img/date.png) right 15px center no-repeat;
+}
+.form_select{
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid #c8c6c6;
+  font-family: "OpenSansItalic", sans-serif;
+  font-size: 16px;
+  color: #4c4c4c;
+  padding: 3px 10px;
+  max-width: 200px;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: rgba(255, 255, 255, 0.4) url(../img/arrow.png) right 15px center  no-repeat;
+  color: #7c7c7c;
+}
+.main_btn--gold{
+  background: #c89f2d;
+  border: none;
+  text-transform: capitalize;
+  width: 200px;
+  margin: 0 auto;
+  padding: 5px 0;
+}
+.main_btn--gold:hover{
+  background: #cea229;
+}
+.booking_form .button_wrapper{
+  width: 100%;
+  text-align: center;
+}
+.main_footer{
+  position: absolute;
+  bottom: 0;
+  background: #191919;
+  color: #fff;
+  width: 1600px;
+  padding: 70px 0;
+  font-family: "OpenSansRegular", Arial, Helvetica, sans-serif;
+}
+.main_footer .container{
+  display: flex;
+  justify-content: space-between;
+}
+.main_footer .about{
+  max-width: 30%;
+  text-align: center;
+}
+.main_footer .main_text{
+  color: #ffffff;
+}
+.main_footer .main_text .bold{
+  font-family: "OpenSansBold", Arial, sans-serif;
+}
+.section_title__small{
+  font-size: 21px;
+  text-align: center;
+}
+.payments{
+  margin: 30px auto 0;
+  text-align: center;
+}
+.main_footer .social_links a{
+  background: url(../img/social-f.png) center no-repeat;
+}
+.main_footer .social_links a.social_link--youtube{
+
+}
+.main_footer .social_links a.social_link--twitter{
+
+}
+.main_footer .social_links a.social_link--smth{
+
 }
