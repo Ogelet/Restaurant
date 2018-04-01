@@ -238,6 +238,23 @@ section.menu{
 }
 .dish{
   margin-bottom: 25px;
+  padding: 10px 10px;
+}
+.dish--special{
+  background: url(../img/border.png) no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+.dish--special:before{
+  content: "Special";
+  position: absolute;
+  right: 0;
+  top: -20px;
+  padding: 2px 10px;
+  background: url(../img/label.jpg) center no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  font-size: 14px;
 }
 .dish_main_info{
   display: flex;
@@ -258,5 +275,43 @@ section.menu{
   margin-bottom: 55px;
 }
 section.reviews{
-  
+  background: url(../img/review.jpg) center no-repeat;
+  background-size: cover;
+}
+section.reviews{
+  padding: 100px 0;
+  text-align: center;
+}
+section.reviews .content_wrapper{
+  background: rgba(0,0,0,.8);
+  max-width: 770px;
+  margin: 0 auto;
+  padding: 70px 60px;
+}
+section.reviews .content_wrapper .main_text{
+  font-family: 'Gentium Book Basic', 'Times New Roman', Times, serif;
+  font-size: 25px;
+  line-height: 45px;
+  color: #dee0e0;
+  position: relative;
+}
+section.reviews .content_wrapper .main_text:before{
+  content: '';
+  width: 32px;
+  height: 25px;
+  position: absolute;
+  top: -10px;
+  left: -40px;
+  background: url(../img/quots.png) center no-repeat;
+}
+.author{
+  color: #fff;
+  font-size: 18px;
+  margin-top: 20px;
+}
+section.booking{
+  background: url(../img/pattern2.png), linear-gradient( 130deg, #fff 50%, #e8e8e8);
+  box-shadow: inset 5px 5px 50px rgba(1,1,1,.1);
+  padding: 100px 0 110px;
+  text-align: center;
 }
