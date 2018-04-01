@@ -254,6 +254,7 @@ section.menu{
 }
 .menu .container{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   text-align: center;
   padding: 0 100px;
@@ -341,13 +342,13 @@ section.reviews .content_wrapper .main_text:before{
 section.booking{
   background: url(../img/pattern2.png), linear-gradient( 130deg, #fff 50%, #e8e8e8);
   box-shadow: inset 5px 5px 50px rgba(1,1,1,.1);
-  padding: 100px 0 110px;
   text-align: center;
-  padding: 0 110px 0 30px;
+  padding: 96px 285px 85px 205px;
 }
 section.booking .container{
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 .food_picture{
   margin: 0 10px;
@@ -357,12 +358,13 @@ section.booking .container{
   margin-left: 75px;
 }
 .booking_description .main_text{
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 }
 .booking_form{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding-top: 32px;
 }
 .booking_form fieldset{
   width: 200px;
@@ -370,7 +372,7 @@ section.booking .container{
   margin: 0;
   padding: 0;
   text-align: left;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 .form_label{
   display: block;
@@ -385,7 +387,7 @@ section.booking .container{
   font-family: "OpenSansItalic", sans-serif;
   font-size: 16px;
   color: #4c4c4c;
-  padding: 3px 10px;
+  padding: 6px 16px;
   width: 100%;
 }
 ::-webkit-input-placeholder {
@@ -412,7 +414,7 @@ section.booking .container{
   font-family: "OpenSansItalic", sans-serif;
   font-size: 16px;
   color: #4c4c4c;
-  padding: 3px 10px;
+  padding: 5px 10px;
   max-width: 200px;
   width: 100%;
   -webkit-appearance: none;
@@ -435,6 +437,7 @@ section.booking .container{
 .booking_form .button_wrapper{
   width: 100%;
   text-align: center;
+  padding-top: 9px;
 }
 .main_footer{
   position: absolute;
@@ -442,19 +445,33 @@ section.booking .container{
   background: #191919;
   color: #fff;
   width: 1600px;
-  padding: 70px 0;
+  padding: 52px 0 72px;
   font-family: "OpenSansRegular", Arial, Helvetica, sans-serif;
+}
+.main_footer .section_title__small{
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  background: url(../img/decor-sm.png) center bottom no-repeat;
 }
 .main_footer .container{
   display: flex;
   justify-content: space-between;
 }
 .main_footer .about{
-  max-width: 30%;
+  width: 32%;
   text-align: center;
+  padding: 0 0 0 50px;
+}
+.main_footer .about_work{
+  width: 31%;
+
+}
+.main_footer .location{
+  width: 31%;
 }
 .main_footer .main_text{
   color: #ffffff;
+  text-align: center;
 }
 .main_footer .main_text .bold{
   font-family: "OpenSansBold", Arial, sans-serif;
@@ -474,7 +491,9 @@ section.booking .container{
   font-family: "OpenSansBold", Arial, sans-serif;
 }
 .main_footer .social_links{
-  justify-content: center
+  justify-content: center;
+  padding: 0;
+  margin-top: 58px;
 }
 .main_footer .social_links a{
   background: url(../img/social-f.png) center no-repeat;
